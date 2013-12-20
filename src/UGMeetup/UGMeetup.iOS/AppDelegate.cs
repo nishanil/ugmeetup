@@ -30,6 +30,7 @@ namespace UGMeetup.iOS
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 
 			rootViewController = new LoginViewController ();
+
 			// If you have defined a root view controller, set it here:
 			window.RootViewController = rootViewController;
 			

@@ -15,7 +15,12 @@ namespace UGMeetup.iOS
 			BackgroundColor = UIColor.White;
 			string pngFileName = "Default";
 
+			if(UIScreen.MainScreen.Bounds.Height > 480)
+				pngFileName+= "-568h@2x";
+
 			image = new UIImageView (UIImage.FromBundle (pngFileName));
+
+			image.Frame = UIScreen.MainScreen.Bounds;
 
 			UIEdgeInsets imageInsets = new UIEdgeInsets(4.0f, 40.0f, 4.0f, 4.0f);
 
@@ -26,7 +31,6 @@ namespace UGMeetup.iOS
 			loginImage = UIImage.FromBundle ("FBLoginViewButtonPressed").CreateResizableImage (imageInsets);
 			loginButton.SetBackgroundImage (loginImage, UIControlState.Highlighted);
 
-//		
 			UIFont font = UIFont.FromName("HelveticaNeue-Bold", 14.0f);
 			string loginText = "Log in with Facebook";
 			float loginTextWidth =  this.StringSize(loginText, font).Width;
@@ -45,7 +49,6 @@ namespace UGMeetup.iOS
 			loginLabel.BackgroundColor = UIColor.Clear;
 			loginLabel.TextAlignment = UITextAlignment.Center;
 			loginLabel.TextColor = UIColor.White;
-//
 
 			this.Add (image);
 			this.Add (loginButton);
