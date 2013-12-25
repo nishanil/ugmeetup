@@ -1,0 +1,78 @@
+/* Reset and define common styles */
+* { box-sizing: border-box; -moz-box-sizing: border-box; margin: 0; padding: 4px; }
+/*body { font-family: Arial, Helvetica; background-color: #e0e0e0; }
+button { border: 1px solid #999; color: #555; background-color: #F4F4FA; padding: 0 10px; }
+button:hover { background-color: white; }*/
+input[type=text], input:not([type]) { padding: 0 10px; text-overflow: ellipsis; }
+
+#logged-in, #logged-out { text-transform: uppercase; font-weight: normal; color: white; font-size: 10px; text-align: right; }
+#input-item-text { width: 100%; height: 40px; border: 1px solid #999; font-size: 1em; border-radius: 4px;}
+#input-item-textArea { width: 100%; height: 120px; border: 1px solid #999; font-size: 1em; border-radius: 4px; padding: 0 10px; text-overflow: ellipsis; }
+#eventStartTime, #eventEndTime { width: 100%; height: 40px; border: 1px solid #999; border-radius: 4px; }
+
+/*#eventDiv { margin: 10px;}
+#sessionsDiv { margin: 10px;}*/
+
+.event-logo
+{
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 5px;
+}
+.img-upload
+{
+	display: inline-block;
+	vertical-align: bottom;
+
+	width: 150px;
+	height: 150px;
+	background: url(imgs/image-upload.png) no-repeat;
+
+}
+.circular-image-holder {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+	
+	}
+
+/*background: url(http://www.gravatar.com/avatar/00000000000000000000000000000000) no-repeat;*/
+
+
+body h2 { text-transform: lowercase; font-weight: normal; color: #4A4A4A; font-size: 18px; }
+
+
+
+/* Main page structure and masthead style */
+#wrapper { max-width: 800px; margin: auto; padding: 20px; }
+article { background-color: white; box-shadow: 0 0 12px rgba(0, 0, 0, 0.75); border-radius: 10px; padding: 4px; }
+header { background-color: #4A4A4A; padding: 20px; border-top-left-radius: 10px; border-top-right-radius: 10px; }
+header h1 { text-transform: uppercase; font-weight: normal; color: white; font-size: 28px; }
+header h2 { text-transform: uppercase; font-weight: normal; color: white; font-size: 20px; }
+#summary { text-align: center; padding: 8px 0; }
+
+/* "Add new" form */
+#add-item { height: 40px; margin: 17px 0 5px 0; font-size: 1.1em }
+#add-item div { overflow: hidden; }
+#add-item button { float: right; margin-left: 10px; padding: 0 10px; height: 100%; border-radius: 4px; }
+#new-item-text { width: 100%; height: 40px; border: 1px solid #999; font-size: 1em; border-radius: 4px; }
+
+/* List of items */
+#todo-items li { list-style-type: none; height: 36px; padding: 0px 5px; border-bottom: 1px solid #dadada;  }
+.item-complete { float: left; margin: 0 8px 0 15px; height: 100%; }
+.item-delete { float: right; margin: 5px; margin-right: 15px; height: 26px; }
+
+/* Textboxes in list of items */
+#todo-items li div { overflow: hidden; padding: 5px 2px; }
+.item-text { width: 100%; height: 26px; line-height: 24px; border: 1px solid transparent; background-color: transparent; }
+.item-text:focus, .item-text:hover { border-color: #aaa; background-color: #FFC; }
+
+/* Footer */
+footer { text-align: center; font-size: 0.8em; margin-top: 20px; }
+footer a { color: #666; display: block; }
+#errorlog { color: red; font-weight: bold; padding: 8px; display: inline-block; text-align: left; }

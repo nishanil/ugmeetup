@@ -4,7 +4,6 @@ using System.Drawing;
 
 namespace UGMeetup.iOS
 {
-// facebook login button : https://github.com/facebook/facebook-ios-sdk/blob/master/src/FBLoginView.m 
 	public class LoginView : UIView
 	{
 		UIImageView image;
@@ -21,6 +20,9 @@ namespace UGMeetup.iOS
 			image = new UIImageView (UIImage.FromBundle (pngFileName));
 
 			image.Frame = UIScreen.MainScreen.Bounds;
+
+			// facebook login button code ported from FB iOS SDK :
+			// https://github.com/facebook/facebook-ios-sdk/blob/master/src/FBLoginView.m 
 
 			UIEdgeInsets imageInsets = new UIEdgeInsets(4.0f, 40.0f, 4.0f, 4.0f);
 
