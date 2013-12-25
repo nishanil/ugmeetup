@@ -89,7 +89,9 @@
                         </tr>
                         <tbody data-bind="foreach: $root.assignedSpeakers">
                             <tr>
-                                <td><span class="glyphicon glyphicon-user"></span> </td>
+                                <td><!-- <span class="glyphicon glyphicon-user"></span>  -->
+                                <div class="circular-image-holder" data-bind="style: { backgroundImage:  img }"></div>
+                                </td>
                                 <td data-bind="text: name"></td>
                                 <td data-bind="text: bio"></td>
                                 <td> <a data-bind="attr: { href: twitterUrl, title: twitter}, text : twitter"></a> </td>
@@ -159,11 +161,11 @@
 </div>
 
 <script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js'></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
 <script src='http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js'></script>
 <script src='http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.1.0.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js'></script>
-<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script src='http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js'></script>
 <script src='config.js'></script>
 <script src='page.js'></script>
 </body>
