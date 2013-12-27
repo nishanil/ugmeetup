@@ -1,7 +1,6 @@
 var Config = function ()
 {
-	// add your Azure Mobile Services url and key here
 	var self = this;
-	self.url='',
-	self.key=''
+	self.APPLICATION_ID = '';
+	self.JAVASCRIPT_KEY = '';
 }
